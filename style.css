@@ -44,7 +44,14 @@ body {
   font-family: 'Poppins', 'Open Sans';
   display: flex;
   flex-direction: column;
-  background-color: #323232;
+  background-image: repeating-linear-gradient(
+    -45deg,
+    var(--primary-color) 0px,
+    var(--primary-color) 10px,
+    var(--grey) 10px,
+    var(--grey) 20px
+  );
+
 }
 header{
   display: flex;
@@ -57,7 +64,7 @@ header{
 
 form {
   position: relative;
-  width: 500px;
+  width: 300px;
   max-width: 100%;
 }
 form input {
@@ -110,17 +117,18 @@ main{
 }
 main .main-content {
   background-color: var(--primary-color);
-  width: 70%;
-  height: 85vh;
+  min-width: 70%;
+  min-height: 80vh;
   display: flex;
   align-items: center;
   justify-content: center;
-  flex-direction: column; 
+  flex-direction: column;
+  box-shadow: 3px 3px 5px 15px rgba(0,0,0,0.4);
 }
 main .card-container {
   background-color: var(--flying);
-  width: 90%;
-  height: 80%;
+  max-width: 90%;
+  max-height: 80%;
   display: flex;
   align-items: center;
   justify-content: center;
