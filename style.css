@@ -54,13 +54,6 @@ header{
   border-bottom: 2px solid var(--normal);
   margin-bottom: 50px;
 }
-header #nav {
-  border-right: 2px solid var(--normal);
-  padding: 0 10px;
-  display: flex;
-  align-items: center;
-  margin-right: 10px;
-}
 
 form {
   position: relative;
@@ -77,6 +70,7 @@ form input {
 }
 form input:focus{
   outline: none;
+  border: 1px solid var(--dark-grey);
 }
 form button {
   cursor: pointer;
@@ -84,8 +78,8 @@ form button {
   border: 0;
   border-radius: 50px;
   color: #fff;
-  font-size: 16px;
-  padding: 7px 12px;
+  font-size: 14px;
+  padding: 9px 10px;
   position: absolute;
   top: 1px;
   right: 2px;
@@ -102,24 +96,17 @@ form button:hover{
 #nav img {
   width: 120px;
 }
-#nav #card-game img {
-  width: 70px;
+#nav {
+  box-shadow:  0 0 7px 1px #666666;
+  margin: 0 10px;
+  padding: 9px 10px 8px 10px;
 }
-#home:hover, #card-game:hover {
-  transform: translateY(10%);
-  transition:ease-out 0.2s;
-}
-#card-game {
-  cursor: pointer;
-}
-
 
 /* MAIN */
 main{
   display: flex;
   align-items: center;
-  justify-content: center;
-  
+  justify-content: center;  
 }
 main .main-content {
   background-color: var(--primary-color);
@@ -128,8 +115,7 @@ main .main-content {
   display: flex;
   align-items: center;
   justify-content: center;
-  flex-direction: column;
-  
+  flex-direction: column; 
 }
 main .card-container {
   background-color: var(--flying);
@@ -152,6 +138,7 @@ main .card-container {
   max-height: 342px;
   min-height: 342px;
 }
+
 .stats{
   display: flex;
   flex-direction: column;
@@ -161,7 +148,6 @@ main .card-container {
   padding: 10px 30px;
   width: 250px;
   height: 342px;
- 
 }
 .stats h3 {
   font-size: 2.8rem;

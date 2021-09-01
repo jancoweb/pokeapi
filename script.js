@@ -72,10 +72,10 @@ function getHeight(data){
 }
 
 function more(data){
-  const more = document.getElementById('card-game');
+  const more = document.getElementById('nav');
   
   more.innerHTML = `<a href='https://www.pokemon.com/br/pokedex/${data.name}' target="_blank">
-  <img src="img/link_2.png" alt=""></a>` 
+  <img src="img/pokemon-logo.png" alt=""></a>` 
  }
 
 form.addEventListener('submit', (e)=>{
