@@ -75,7 +75,7 @@ function more(data){
   const more = document.getElementById('card-game');
   
   more.innerHTML = `<a href='https://www.pokemon.com/br/pokedex/${data.name}' target="_blank">
-  <img src="/ps1_pokemon/img/link_2.png" alt=""></a>` 
+  <img src="img/link_2.png" alt=""></a>` 
  }
 
 form.addEventListener('submit', (e)=>{
