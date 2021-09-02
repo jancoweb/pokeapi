@@ -61,13 +61,13 @@ function getColorbyType(data){
 
 function getWeight(data){
   const weight = data.weight;
-  const weightRes = parseFloat(weight)/10;
+  const weightRes = weight/10;
   document.getElementById('weight_span').innerHTML = `${weightRes} kg`
 }
 
 function getHeight(data){
   const height = data.height;
-  const heightRes = parseFloat(height)/10;
+  const heightRes = height/10;
   document.getElementById('height_span').innerHTML = `${heightRes} m`
 }
 
